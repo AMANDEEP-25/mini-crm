@@ -24,11 +24,17 @@ connection.once("open", () => {
 const customersRouter = require("./routes/customers");
 const ordersRouter = require("./routes/orders");
 const audiencesRouter = require("./routes/audiences");
+const campaignsRoutes = require("./routes/campaigns");
+const messagesRouter = require("./routes/messages");
+const campaignsRouter = require("./routes/campaigns");
 
 // Use routes
 app.use("/api/customers", customersRouter);
 app.use("/api/orders", ordersRouter);
 app.use("/api/audiences", audiencesRouter);
+app.use("/api/campaigns", campaignsRoutes);
+app.use("/api/messages", messagesRouter);
+app.use("/api/campaigns", campaignsRouter);
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
