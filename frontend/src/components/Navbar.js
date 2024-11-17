@@ -17,9 +17,7 @@ const Navbar = ({ onLogout }) => {
         <li>
           <Link to="/create-campaign">Create Campaign</Link>
         </li>
-        <li>
-          <Link to="/campaign-history">Campaign History</Link>
-        </li>
+
         <li>
           <Link to="/past-campaigns">Past Campaigns</Link>
         </li>
