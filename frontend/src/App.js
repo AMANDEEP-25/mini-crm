@@ -13,11 +13,10 @@ import Home from "./pages/Home";
 import Customers from "./pages/Customers";
 import Orders from "./pages/Orders";
 import CreateCampaign from "./pages/Create-Campaign";
-import CampaignHistory from "./pages/CampaigHistory";
 import PastCampaigns from "./pages/PastCampaigns";
 
 const GOOGLE_CLIENT_ID =
-  "12503885902-ovho0d88dshre2p8okncls6em2lr88dn.apps.googleusercontent.com"; // Replace with your actual Google Client ID
+  "12503885902-ovho0d88dshre2p8okncls6em2lr88dn.apps.googleusercontent.com";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
